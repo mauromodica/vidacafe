@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida Café</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    
+    <header id="header">
+        <div id="idioma">
+            <img src="../Images/globo languages.svg" alt="idioma" class="imagenIdioma">
+            <nav class="cambioIdioma">
+                <ul>
+                    <li>
+                        <a href="#">ESPAÑOL</a>
+                    </li>
+                    <li>
+                        <a href="#">ENGLISH</a>
+                    </li>
+                    <li>
+                        <a href="#">PORTUGUÊS</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="contenedorMenu">
+            <nav class="menu">
+                <ul class="listaMenu">
+                    <li class="palabraMenu">
+                        <a href="../index.html">INICIO</a>
+                    </li>
+                    <li class="palabraMenu">
+                        <a href="../pages/menu.html">MENÚ</a>
+                            <ul class="desplegableMenu">
+                                <li><a href="#INFUSIONES">INFUSIONES</a></li>
+                                <li><a href="#bebidasFrias">BEBIDAS FRÍAS</a></li>
+                                <li><a href="#PANADERIA">PANADERÍA</a></li>
+                                <li><a href="#EXTRAS">EXTRAS</a></li>
+                            </ul>
+                    </li>
+                    <li class="palabraMenu">
+                        <a href="../pages/reservas.html">RESERVAS</a>
+                    </li>
+                    <li class="palabraMenu">
+                        <a href="../pages/contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h2 id="tituloReserva">RESERVA DE MESA</h2>
+
+    <div id="formReserva">
+
+        <form action="" class="formPrincipal">
+            <label for="cantidad"></label>
+            <input type="number" class="cantidad" placeholder="Personas" required>
+
+            <label for="fecha"></label>
+            <input type="date" class="fecha" placeholder="Fecha" required>
+
+            <label for="hora"></label>
+            <input type="time" class="hora" placeholder="Hora" required>
+
+            <label for="nombreApellido"></label>
+            <input type="text" class="nombreApellido" placeholder="NOMBRE Y APELLIDO" required>
+
+            <label for="email"></label>
+            <input type="email" class="email" placeholder="CORREO ELECTRÓNICO" required>
+
+            <label for="comentarios" class="textoMensaje">COMENTARIOS ADICIONALES</label>
+            <textarea name="" id="comentarios" cols="30" rows="10">
+            </textarea>
+            <br>
+            <input type="submit" value="SOLICITAR RESERVA" class="botonReserva">
+            
+        </form>
+        
+
+
+    </div>
+
+
+    <footer id="footer">
+        <div class="horarios">
+            <h5 class="tituloFooter">HORARIOS</h5>
+            <H6 class="textoHorarios">Lunes a viernes de 08 a 12 h y de 16 a 22 h <br>Sábados de 09 a 12 h y de 16 a 22 h <br>Domingos y feriados de 16 a 22 h</H6>
+        </div>
+        <div class="ubicacion">
+            <h5 class="tituloFooter">UBICACIÓN</h5>
+            <a href="https://maps.app.goo.gl/mLLv7xixhs7xi8Cx6" target="_blank">
+                <img src="../Images/marcador ubicacion.svg" alt="ubicacion" class="imgRS">
+                <H6 class="textoUbicacion">Av. Belgrano 999, Salta Capital</H6>
+            </a>
+        </div>
+        <div class="rrss">
+            <h5 class="tituloFooter">REDES SOCIALES</h5>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="../Images/instagram.svg" alt="instagram" class="imgRS">
+                <H6 class="textoRS">@vidacafesalta</H6>
+                </a>
+            
+                <a href="https://www.tiktok.com/" target="_blank">
+                <img src="../Images/tiktok.svg" alt="tiktok" class="imgRS">
+                <H6 class="textoRS">Vida Café Salta</H6>
+                </a>
+        </div>
+        <div class="copyright">
+            <h6 class="textoCopy">&copy; 2023 Vida Café</h6>
+            <br>
+            <a href="../pages/nosotros.html" class="linkNosotros">
+                <h6 class="textoNosotros">Acerca de nosotros</h6>
+            </a>
+        </div>
+    </footer>
+</body>

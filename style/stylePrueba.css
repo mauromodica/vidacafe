@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;600;800&family=Open+Sans:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header {
+    background-image: url(./Images/taza-cafe-recien-hecho-servido-taza.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+#idioma {
+    width: 120px;
+    height: 20px;
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 10 px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.cambioIdioma a {
+    color: #3a3a3a;
+    font-size: 12px;
+    position: relative;
+    right: -10px;
+}
+
+.imagenIdioma {
+    width: 12px;
+    position: relative;
+    right: -10px;  
+}
+
+div#contenedorMenu {
+    position: relative;
+    top: 250px;
+}
+
+.listaMenu {
+    display:flex;
+    gap: 150px;
+    background-color: #3a3a3a;
+    color: #ffd500;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.palabraMenu a {
+    color: #ffd500;
+    text-decoration: none;
+    
+}
+
+.listaMenu a:hover {
+    background-color: #ffd500;
+    color: #3a3a3a;
+}
+
+div#promocion {
+    padding: 80px;
+    height: 500px;
+    width: 1300px;
+    margin: 0 auto;
+    background-image: url(./Images/croissants-taza-cafe.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.botonPromo {
+    background-color: rgba(255, 213, 0, 0.5);
+    width: 500px;
+    height: 60px;
+}
+
+.botonPromo {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 300px;
+    
+}
+
+.textoPromo1 {
+    display: inline;
+    color: #3a3a3a;
+}
+
+.precioPromo1 {
+    display: inline;
+    color: #3a3a3a;
+}
+
+#pasos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    color: #3a3a3a;
+}
+
+.imgPaso {
+    height: 150px;
+}
+
+.paso1 {
+    padding: 20px;
+    background-color: rgb(229, 229 , 229);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 320px;
+}
+
+.paso2 {
+    padding: 20px;
+    background-color: rgb(229, 229 , 229);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 320px;
+}
+
+.paso3 {
+    padding: 20px;
+    background-color: rgb(229, 229 , 229);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 320px;
+}
+
+.tituloPaso {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.textoPaso {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 20px;
+    font-style: normal;
+}
+
+#footer {
+    background-color: #3a3a3a;
+    color: #ffd500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer a {
+    color: #ffd500;
+}
+
+.imgRS {
+    height: 15px;
+    display: inline;
+}
+
+.horarios {
+    width: 300px;
+    height: 150px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ubicacion {
+    width: 300px;
+    height: 150px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.textoUbicacion {
+    display: inline;
+
+}
+
+.textoRS {
+    display: inline;
+}
+
+.tituloFooter {
+    padding-bottom: 20px;
+
+}
+
+.rrss {
+    width: 300px;
+    height: 150px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright {
+    width: 300px;
+    height: 150px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* menu.html */
+
+#cuerpoInterno {
+    width: 1300px; 
+}
+
+h2 {
+    color: #3a3a3a;
+}
+
+.bloque {
+    background-color: #e5e5e5;
+    width: 600px;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    color: #3a3a3a;
+}
+
+.tituloSeccion {
+    color: #3a3a3a;
+    margin-top: 20px;
+}
+
+.imgRistretto {
+    height: 100px;
+}
+
+.textCant {
+    font-style: italic;
+}
+
+.resultCant {
+    background-color: white;
+    border: #3a3a3a solid;
+    width: 40px;
+    border-radius: 5px;
+    border-width: 1px;
+    text-align: right;
+    padding-right: 5px;
+    margin: 10px 0;
+}
+
+.botonResta {
+    color: #ffd500;
+    font-size: 20px;
+    background-color: #3a3a3a;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.botonSuma {
+    color: #3a3a3a;
+    font-size: 20px;
+    background-color:#ffd500;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.botonPagar {
+    margin: 20px 0px;
+    background-color: #3a3a3a;
+    width: 200px;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.botonPagar a {
+    text-decoration: none;
+    color: #ffd500;
+}
+
+/* pedido.html */
+
+#tituloTuPedido {
+    position: relative;
+    left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#pedidoArmado {
+    position: relative;
+    left: 50px;
+    width: 1000px;
+    color: #3a3a3a;
+    padding-left: 10px;
+}
+
+#totalPrecioContenedor {
+    position: relative;
+    left: 50px;
+    width: 1000px;
+    background-color: #3a3a3a;
+    color: #ffd500;
+    padding: 5px 10px;
+}
+
+.botonEditar {
+    position: relative;
+    left: 50px;
+    margin: 20px 0px;
+    background-color: #3a3a3a;
+    width: 200px;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.botonEditar a {
+    text-decoration: none;
+    color: #ffd500;
+}
+
+.botonPagarPedir {
+    margin: 20px 0px;
+    background-color: #3a3a3a;
+    width: 200px;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.botonPagarPedir a {
+    text-decoration: none;
+    color: #ffd500;
+}
+.botonEfectivo {
+    margin: 20px 0px;
+    background-color: #3a3a3a;
+    width: 200px;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.botonEfectivo a {
+    text-decoration: none;
+    color: #ffd500;
+}
+
+#formularioPago {
+    width: 1000px;
+    position: relative;
+    left: 50px;
+    color: #3a3a3a;
+}
+
+label {
+    display: block;
+}
+
+input {
+    height: 25px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+    border: 0.5px rgb(229, 229 , 229) solid;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+/*reservas.html */
+
+#tituloReserva {
+    position: relative;
+    left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#formReserva {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formPrincipal {
+    color: #3a3a3a;
+    position: relative;
+    left: 50px;
+}
+
+.botonReserva {
+    margin: 20px 0px;
+    background-color: #3a3a3a;
+    color: #ffd500;
+    width: 200px;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*contacto.html */
+
+#tituloContactanos {
+    position: relative;
+    left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#formContacto input {
+    width: 250px;
+}
+
+#formContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.botonEnviar {
+    margin: 20px 0px;
+    background-color: #3a3a3a;
+    color: #ffd500;
+    width: 200px;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.textoMensaje {
+    color: #3a3a3a;
+}
+
+#mensaje {
+    border: #3a3a3a solid;
+    border-width: 1px;
+    border-radius: 3px;
+}
+
+#comentarios {
+    border: #3a3a3a solid;
+    border-width: 1px;
+    border-radius: 3px;
+}
+
+/*nosotros.html*/
+
+#tituloNosotros {
+    position: relative;
+    left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.textoNosotros {
+    width: 1000px;
+    position: relative;
+    left: 50px;
+    padding-bottom: 20px;
+    color: #3a3a3a;
+}
