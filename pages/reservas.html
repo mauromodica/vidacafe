@@ -1,30 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vida Café</title>
-    <link rel="stylesheet" href="../style/stylePrueba.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vida Café | Reserva de mesa</title>    <meta name="description" content="Si estás en nuestro local, hacé tu pedido por el sitio, pagá y te lo llevamos a tu mesa.">
+        <meta name="keywords" content="café, salta, desayunar, merienda, confiteria, panaderia, comer">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="../scss/main.css">
+        
+    </head>
 <body>
     
     <header id="header">
-        <div id="idioma">
-            <img src="../Images/globo languages.svg" alt="idioma" class="imagenIdioma">
-            <nav class="cambioIdioma">
-                <ul>
-                    <li>
-                        <a href="#">ESPAÑOL</a>
-                    </li>
-                    <li>
-                        <a href="#">ENGLISH</a>
-                    </li>
-                    <li>
-                        <a href="#">PORTUGUÊS</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
         <div id="contenedorMenu">
             <nav class="menu">
                 <ul class="listaMenu">
@@ -32,19 +19,13 @@
                         <a href="../index.html">INICIO</a>
                     </li>
                     <li class="palabraMenu">
-                        <a href="./menu.html">MENÚ</a>
-                            <ul class="desplegableMenu">
-                                <li><a href="#infusiones">INFUSIONES</a></li>
-                                <li><a href="#bebidasFrias">BEBIDAS FRÍAS</a></li>
-                                <li><a href="#panaderia">PANADERÍA</a></li>
-                                <li><a href="#extras">EXTRAS</a></li>
-                            </ul>
+                        <a href="../pages/menu.html">MENÚ</a>
                     </li>
                     <li class="palabraMenu">
-                        <a href="./reservas.html">RESERVAS</a>
+                        <a href="../pages/reservas.html">RESERVAS</a>
                     </li>
                     <li class="palabraMenu">
-                        <a href="./contacto.html">CONTACTO</a>
+                        <a href="../pages/contacto.html">CONTACTO</a>
                     </li>
                 </ul>
             </nav>
@@ -57,7 +38,7 @@
 
         <form action="" class="formPrincipal">
             <label for="cantidad"></label>
-            <input type="number" class="cantidad" placeholder="Personas" required>
+            <input type="number" class="cantidad" placeholder="Cantidad de personas" required>
 
             <label for="fecha"></label>
             <input type="date" class="fecha" placeholder="Fecha" required>
@@ -66,10 +47,10 @@
             <input type="time" class="hora" placeholder="Hora" required>
 
             <label for="nombreApellido"></label>
-            <input type="text" class="nombreApellido" placeholder="NOMBRE Y APELLIDO" required>
+            <input type="text" class="nombreApellido" placeholder="Nombre y Apellido" required>
 
             <label for="email"></label>
-            <input type="email" class="email" placeholder="CORREO ELECTRÓNICO" required>
+            <input type="email" class="email" placeholder="Correo Electrónico" required>
 
             <label for="comentarios" class="textoMensaje">COMENTARIOS ADICIONALES</label>
             <textarea name="" id="comentarios" cols="50" rows="10">
