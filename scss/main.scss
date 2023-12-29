@@ -5,18 +5,25 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;600;800&family=Open+Sans:wght@300;400;600&display=swap');
-@import 'menu';
 
-$colorPrincipal: #ffd500;
-$colorSecundario: #3a3a3a;
-$colorTerciario: #e5e5e5;
+@import "_vars.scss";
+
+@mixin forms {
+    height: 25px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+    border: 0.5px $colorTerciario solid;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+}
 
 body {
-    font-family: 'Jost', sans-serif;
+    font-family: 'Jost', sans-serif; 
 }
 
 header {
-    background-image: url(../images/taza-cafe-recien-hecho-servido-taza.jpg);
+    background-image: url(../images/portada.jpg);
     background-size: 100%;
     background-position: center;
     height: 200px;
@@ -24,14 +31,16 @@ header {
     #contenedorMenu {
         position: relative;
         top: 150px;
-        background-color: $colorSecundario;
         z-index: 100;
         height: 50px;
         align-items: center;
         justify-content: center;
 
+        ul.listaMenu {
+            margin: 0px;
+            padding: 0px;
+        }
         
-
         .listaMenu {
             background-color: $colorSecundario;
             color: $colorPrincipal;
@@ -75,7 +84,7 @@ header {
     align-items: center;
     gap: 10px;
     padding: 20px;
-    color: #3a3a3a;
+    color: $colorSecundario;
 
     .tituloPaso {
         font-weight: 600;
@@ -95,7 +104,7 @@ header {
 
     .paso {
         padding: 20px;
-        background-color: rgb(229, 229 , 229);
+        background-color: $colorTerciario;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -103,7 +112,6 @@ header {
         min-width: 275px;
         height: 320px;
     }
-
 }
 
 iframe {
@@ -129,7 +137,6 @@ footer {
         font-weight: 300;
     }
 
-
     a {
         color: $colorPrincipal;
         text-decoration: none;
@@ -144,7 +151,7 @@ footer {
 h1 {
     color: $colorSecundario;
     position: relative;
-    width: 400px;
+    width: 380px;
     left: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -168,15 +175,15 @@ h1 {
 
             .bloque {
                 background-color: $colorTerciario;
-                color: #3a3a3a;
+                color: $colorSecundario;
                 padding: 10px;
-                min-width: 400 px;
+                min-width: 400px;
                 display: grid;
                 grid-template-columns: 170px auto 50px 50px;
                 grid-template-rows: 50px 50px 50px;
                 gap: 10px;
 
-                .imgRistretto {
+                .imgMenu {
                     height: 170px;
                     grid-row: 1/3;
                 }
@@ -198,7 +205,7 @@ h1 {
                     
                     .resultCant {
                         background-color: white;
-                        border: #3a3a3a solid;
+                        border: $colorSecundario solid;
                         width: 40px;
                         border-radius: 5px;
                         border-width: 1px;
@@ -208,9 +215,9 @@ h1 {
                     }
                     
                     .botonResta {
-                        color: #ffd500;
+                        color: $colorPrincipal;
                         font-size: 20px;
-                        background-color: #3a3a3a;
+                        background-color: $colorSecundario;
                         height: 30px;
                         width: 30px;
                         border-radius: 5px;
@@ -229,9 +236,9 @@ h1 {
                     }
                     
                     .botonSuma {
-                        color: #3a3a3a;
+                        color: $colorSecundario;
                         font-size: 20px;
-                        background-color:#ffd500;
+                        background-color:$colorPrincipal;
                         height: 30px;
                         width: 30px;
                         border-radius: 5px;
@@ -271,8 +278,6 @@ h1 {
             color: $colorSecundario;
         }
     }
-
-
 }
 
 /*Pedido */
@@ -292,7 +297,7 @@ h1 {
 #totalPrecioContenedor {
   
     padding-left: 50px;
-    width: 450px;
+    width: 350px;
     background-color: $colorSecundario;
     color: $colorPrincipal;
     padding: 5px 10px;
@@ -314,15 +319,41 @@ h1 {
     input {
         position: relative;
         left: 50px;
-        height: 25px;
-        margin-bottom: 10px;
-        padding-left: 5px;
-        padding-right: 5px;
-        border-radius: 3px;
-        border: 0.5px rgb(229, 229 , 229) solid;
-        box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+        @include forms();
     }
 
+}
+
+.aprobado {
+    padding-left: 50px;
+    padding-right: 50px;
+
+    .imgAprobado {
+        padding-bottom: 50px;
+        height: 200px;
+        align-items: center;
+
+    }
+
+    .textoAprobado {
+        text-align: justify;
+    }
+}
+
+.efectivoPago {
+    padding-left: 50px;
+    padding-right: 50px;
+
+    .imgEfectivo {
+        padding-bottom: 50px;
+        height: 200px;
+        align-items: center;
+
+    }
+
+    .textoPagoEfectivo {
+        text-align: justify;
+    }
 }
 
 /*Reservas y Contacto*/
@@ -337,20 +368,14 @@ h1 {
         color: $colorSecundario;
         position: relative;
         left: 10px;
-        width: 400px;
+        width: 380px;
     }
 
     input {
         display: block;
         position: relative;
-        height: 25px;
         width: 200px;
-        margin-bottom: 10px;
-        padding-left: 5px;
-        padding-right: 5px;
-        border-radius: 3px;
-        border: 0.5px rgb(229, 229 , 229) solid;
-        box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+        @include forms();
     }
 
     .botonSubmit {
@@ -371,9 +396,7 @@ h1 {
             background-color: $colorPrincipal;
             color: $colorSecundario;
         }
-    
     }
-
 }
 
 /*Nosotros*/
@@ -388,10 +411,8 @@ h1 {
     text-align: justify;
 }
 
-
-
 @media (max-width: 800px) {
-
+    
     #pasos {
         display: grid;
         grid-template-columns: 1fr;
@@ -408,5 +429,50 @@ h1 {
         display: grid;
         grid-template-columns: 1fr;
     }
-
 }
+
+@media (max-width: 500px) {
+    h1 {
+        position: relative;
+        width: 300px;
+        left: 20px;
+    }
+
+    div.seccion {
+        padding: 10px 20px;
+    }
+
+    #cuerpoInterno div .seccion {
+        gap: 10px;
+        padding: 10px 20px;
+    }
+
+    #cuerpoInterno div .seccion .bloque {
+        display: grid;
+        grid-template-columns: 100px 140px 50px;
+        grid-template-rows: 10px 40px 40px;
+        height: 150px;
+        width: 370px;
+        min-width: 350px;
+
+        img.imgMenu {
+            height: 100px;
+            width: 100px;
+        }
+    }
+
+    #cuerpoInterno div .tituloSeccion {
+        padding-left: 20px;
+    }
+
+    div.contadorBloque {
+        grid-row: 1/4;
+    }
+
+    #pedidoArmado {
+        width: 350px;
+    }
+
+    
+}
+

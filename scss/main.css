@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background-image: url(../images/taza-cafe-recien-hecho-servido-taza.jpg);
+  background-image: url(../images/portada.jpg);
   background-size: 100%;
   background-position: center;
   height: 200px;
@@ -18,11 +18,14 @@ header {
 header #contenedorMenu {
   position: relative;
   top: 150px;
-  background-color: #3a3a3a;
   z-index: 100;
   height: 50px;
   align-items: center;
   justify-content: center;
+}
+header #contenedorMenu ul.listaMenu {
+  margin: 0px;
+  padding: 0px;
 }
 header #contenedorMenu .listaMenu {
   background-color: #3a3a3a;
@@ -75,7 +78,7 @@ header #contenedorMenu .listaMenu .palabraMenu a:focus {
 }
 #pasos .paso {
   padding: 20px;
-  background-color: rgb(229, 229, 229);
+  background-color: #e5e5e5;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -117,7 +120,7 @@ footer .imgRS {
 h1 {
   color: #3a3a3a;
   position: relative;
-  width: 400px;
+  width: 380px;
   left: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -139,13 +142,13 @@ h1 {
   background-color: #e5e5e5;
   color: #3a3a3a;
   padding: 10px;
-  min-width: 400 px;
+  min-width: 400px;
   display: grid;
   grid-template-columns: 170px auto 50px 50px;
   grid-template-rows: 50px 50px 50px;
   gap: 10px;
 }
-#cuerpoInterno div .seccion .bloque .imgRistretto {
+#cuerpoInterno div .seccion .bloque .imgMenu {
   height: 170px;
   grid-row: 1/3;
 }
@@ -237,7 +240,7 @@ h1 {
 
 #totalPrecioContenedor {
   padding-left: 50px;
-  width: 450px;
+  width: 350px;
   background-color: #3a3a3a;
   color: #ffd500;
   padding: 5px 10px;
@@ -262,8 +265,34 @@ h1 {
   padding-left: 5px;
   padding-right: 5px;
   border-radius: 3px;
-  border: 0.5px rgb(229, 229, 229) solid;
+  border: 0.5px #e5e5e5 solid;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+.aprobado {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.aprobado .imgAprobado {
+  padding-bottom: 50px;
+  height: 200px;
+  align-items: center;
+}
+.aprobado .textoAprobado {
+  text-align: justify;
+}
+
+.efectivoPago {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.efectivoPago .imgEfectivo {
+  padding-bottom: 50px;
+  height: 200px;
+  align-items: center;
+}
+.efectivoPago .textoPagoEfectivo {
+  text-align: justify;
 }
 
 /*Reservas y Contacto*/
@@ -277,18 +306,18 @@ h1 {
   color: #3a3a3a;
   position: relative;
   left: 10px;
-  width: 400px;
+  width: 380px;
 }
 #form input {
   display: block;
   position: relative;
-  height: 25px;
   width: 200px;
+  height: 25px;
   margin-bottom: 10px;
   padding-left: 5px;
   padding-right: 5px;
   border-radius: 3px;
-  border: 0.5px rgb(229, 229, 229) solid;
+  border: 0.5px #e5e5e5 solid;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
 }
 #form .botonSubmit {
@@ -335,5 +364,40 @@ h1 {
   #cuerpoInterno div .seccion {
     display: grid;
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    position: relative;
+    width: 300px;
+    left: 20px;
+  }
+  div.seccion {
+    padding: 10px 20px;
+  }
+  #cuerpoInterno div .seccion {
+    gap: 10px;
+    padding: 10px 20px;
+  }
+  #cuerpoInterno div .seccion .bloque {
+    display: grid;
+    grid-template-columns: 100px 140px 50px;
+    grid-template-rows: 10px 40px 40px;
+    height: 150px;
+    width: 370px;
+    min-width: 350px;
+  }
+  #cuerpoInterno div .seccion .bloque img.imgMenu {
+    height: 100px;
+    width: 100px;
+  }
+  #cuerpoInterno div .tituloSeccion {
+    padding-left: 20px;
+  }
+  div.contadorBloque {
+    grid-row: 1/4;
+  }
+  #pedidoArmado {
+    width: 350px;
   }
 }/*# sourceMappingURL=main.css.map */
